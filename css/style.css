@@ -1,0 +1,28 @@
+.triangl-top{
+   
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #231F20;
+   }
+.triangl-top::after {
+    content: ''; 
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+   }
+}
+.triangl-down{
+    
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #231F20;
+   }
+.triangl-down::after {
+    content: ''; 
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid black; 
+   }
+}

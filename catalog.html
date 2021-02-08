@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог - Нёрдс</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нердс">
         </a>
-          <ul>
+          <ul class="site-navigation">
             <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиентыa</a></li>
-            <li><a href="blank.html">Магазин</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
+          <a class="basket" href="blank.html">Корзина</a>
         </nav>
-      <a href="blank.html">Корзина</a>
-      <h1>Магазин готовых шаблонов</h1>
+        <h1 class="main-title">Магазин готовых шаблонов</h1>
     </header>
-    <main>
-      <section>
+    <main class="container">
+      <section class="cost">
        <h2>Стоимость</h2>
-        <div id="range" max="15000" min="0"></div>
+        <form class="cost-filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <li>От</li>
+          <li>До</li>
+        </fieldset>
+      </form>
       </section>
-      <section>
+      <section class="view-filter">
         <h2>Фильтр вида</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="view-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сетка</legend>
             <ul>
@@ -94,41 +101,39 @@
           <li><img src="img/img-kvast.jpg" width="358" height="578" alt="Крафтовый квас"></li>
         </ul>
       </section>
-      <div>
         <ul>
           <li><a href="#"> 1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">Следующая</a></li>
         </ul>
-      </div>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-map">
         <!-- Тут будет карта -->
-        <div>
+        <div class="footer-contacts">
           <p>Nёrds design studio</p>
           <p>191186, Санкт-Петербург,<br> 
              ул. Б. Конюшенная, д. 19/8тел. <br>
-            <a href="tel:+78122757575">+7 (812) 275-75-75</a>
+            <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
-          <a href="#">Напишите нам</a>
+          <a class="footer-button" href="#">Напишите нам</a>
         </div>
       </section>
-      <section>
+      <section class="footer-socials">
         <ul>
-           <li><a href="vk.com"><img src="img/vk-icon.png" width="26" height="15" alt="Иконка вконтакте"> VK</a></li>
-           <li><a href="facebook.com"><img src="img/fb-icon.png" width="12" height="12" alt="Иконка фейсбука"> FB</a></li>
-           <li><a href="https://www.instagram.com"><img src="img/insta-icon.png" width="21" height="21" alt="Иконка инстаграмма"> inst</a></li>
+           <li><a class="socials-button" href="vk.com"><img src="img/vk-icon.png" width="26" height="15" alt="Иконка вконтакте"> VK</a></li>
+           <li><a class="socials-button" href="facebook.com"><img src="img/fb-icon.png" width="12" height="12" alt="Иконка фейсбука"> FB</a></li>
+           <li><a class="socials-button" href="https://www.instagram.com"><img src="img/insta-icon.png" width="21" height="21" alt="Иконка инстаграмма"> inst</a></li>
         </ul>
-        <div>
+        <div class="footer-promo">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </section>
     </footer>
-    <!-- <div> 
-          <h2>НАПИШИТЕ НАМ</h2>
+    <!-- <div class="form"> 
+          <h2>Напишите нам</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="appointment-name"></label>
@@ -144,6 +149,6 @@
             </p>
           </form>
           <button type="button">ОТПРАВИТЬ</button>
-      </div> -->
+          </div> -->
   </body>
 </html>
