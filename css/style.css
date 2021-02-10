@@ -1,4 +1,123 @@
-.triangl-top{
+/* Variables */
+
+:root{
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+    --basic-light-grey: #EEEEEE;
+    --basic-dark-grey: #666666;
+    --special-light-red: #fb565a;
+    --special-light-green: #00CA74;
+    --special-green: #00BC6C;
+    --special-dark-green: #00AA62;
+    --special-light-yellow: #EFC849;
+    --special-yellow: #EAB534;
+    --special-dark-yellow: #E5A722;
+    --special-light-grey: #E1E1E1;
+    --sprecial-red: #E74246;
+    --special-dark-red: #D7373B;
+    --special-dark-grey: #4D4D4D;
+    --special: #D5D5D5;
+    --special-light: #DFDFDF;
+    --special-blue: #283136;
+}
+
+/* Basic */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+/* header */
+
+.main-header{
+    background-color: var(--basic-light-grey);
+}
+.main-navigation{
+    font-weight: 500;
+    line-height: 30px;
+}
+.main-navigation a{
+    color: var(--basic-black);
+}
+.main-navigation a:hover{
+    color: var(--special-light-red);
+}
+.main-navigation a:focus{
+    opacity: 0.3;
+}
+
+/* main */
+
+.order h3{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+.order p{
+    text-transform: none;
+    color: var(--special-blue);
+}
+.order a{
+    color: var(--basic-white);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 17px 40px 15px 39px;
+}
+
+.order-button-web{
+    background-color: var(--special-light-red);
+}
+.order-button-web:hover{
+    background-color: var(--sprecial-red);
+}
+.order-button-web:focus{
+    background-color: var(--special-dark-red);
+}
+.order-button-apps{
+    background-color: var(--special-light-green);
+}
+.order-button-apps:hover{
+    background-color: var(--special-green);
+}
+.order-button-apps:focus{
+    background-color: var(--special-dark-green);
+}
+.order-button-presentation{
+    background-color: var(--special-light-yellow);
+}
+.order-button-presentation:hover{
+    background-color: var(--special-yellow);
+}
+.order-button-presentation:focus{
+    background-color: var(--special-dark-yellow);
+}
+
+
+
+
+
+
+
+/* .triangl-top{
    
     border-radius: 10px;
     padding: 20px;
@@ -25,4 +144,4 @@
     border: 10px solid transparent;
     border-bottom: 10px solid black; 
    }
-}
+} */
