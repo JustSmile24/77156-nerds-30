@@ -19,6 +19,7 @@
     --special: #D5D5D5;
     --special-light: #DFDFDF;
     --special-blue: #283136;
+    --special-grey: #444444;
 }
 
 /* Basic */
@@ -28,8 +29,7 @@ body{
     font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: var(--basic-black);
-    text-transform: uppercase;
+    color: var(--basic-black); 
 }
 
 a{
@@ -51,6 +51,7 @@ ul{
 .main-navigation{
     font-weight: 500;
     line-height: 30px;
+    text-transform: uppercase;
 }
 .main-navigation a{
     color: var(--basic-black);
@@ -69,9 +70,9 @@ ul{
     font-weight: bold;
     line-height: 30px;
     color: var(--basic-black);
+    text-transform: uppercase;
 }
 .order p{
-    text-transform: none;
     color: var(--special-blue);
 }
 .order a{
@@ -81,6 +82,7 @@ ul{
     font-weight: 500;
     border-radius: 3px;
     padding: 17px 40px 15px 39px;
+    text-transform: uppercase;
 }
 
 .order-button-web{
@@ -111,11 +113,95 @@ ul{
     background-color: var(--special-dark-yellow);
 }
 
+/* footer */
 
+.info-title{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.info p{
+    color: var(--special-blue);
+}
+.info-text{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+.definition-list-text{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+.definition-list dt{
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: bold;
+}
+.definition-list dd{
+    color: var(--special-blue);
+    line-height: 18px;
+}
 
+.site-list li{
+    opacity: 0.2;
+}
+.site-list li:hover{
+    opacity: 1;
+}
+.site-list li:active{
+    opacity: 0.1;
+}
 
+.contacts-text{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+}
+.contacts-adress{
+    color: var(--basic-dark-grey);
+    line-height: 18px;
+}
+.footer-phone{
+    text-decoration: none;
+    color: var(--basic-dark-grey);
+    line-height: 18px;
+}
+.footer-button{
+    background-color: var(--special-light-red);
+    text-transform: uppercase;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.socials-button-list a{
+    width: 81px;
+    height: 81px;
+    background-color: var(--special-light-grey);
+    border-radius: 50%;
+    display: flex;
+}
+
+.socials-button img{
+    margin: auto;
+}
+.socials-button-list a:hover{
+    background-color: var(--sprecial-red);
+}
+.socials-button-list a:active{
+    background-color: var(--special-dark-red);
+}
+
+.footer-promo h2{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.footer-promo p{
+    line-height: 22px;
+    color: var(--special-grey);
+}
 
 /* .triangl-top{
    
