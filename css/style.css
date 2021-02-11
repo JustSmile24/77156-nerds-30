@@ -1,11 +1,11 @@
 /* Variables */
 
 :root{
-    --basic-white: #ffffff;
+    --basic-white: #FFFFFF;
     --basic-black: #000000;
     --basic-light-grey: #EEEEEE;
     --basic-dark-grey: #666666;
-    --special-light-red: #fb565a;
+    --special-light-red: #FB565A; 
     --special-light-green: #00CA74;
     --special-green: #00BC6C;
     --special-dark-green: #00AA62;
@@ -59,7 +59,7 @@ ul{
 .main-navigation a:hover{
     color: var(--special-light-red);
 }
-.main-navigation a:focus{
+.main-navigation a:active{
     opacity: 0.3;
 }
 
@@ -67,7 +67,7 @@ ul{
 
 .order h3{
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
@@ -91,7 +91,7 @@ ul{
 .order-button-web:hover{
     background-color: var(--sprecial-red);
 }
-.order-button-web:focus{
+.order-button-web:active{
     background-color: var(--special-dark-red);
 }
 .order-button-apps{
@@ -100,7 +100,7 @@ ul{
 .order-button-apps:hover{
     background-color: var(--special-green);
 }
-.order-button-apps:focus{
+.order-button-apps:active{
     background-color: var(--special-dark-green);
 }
 .order-button-presentation{
@@ -109,7 +109,7 @@ ul{
 .order-button-presentation:hover{
     background-color: var(--special-yellow);
 }
-.order-button-presentation:focus{
+.order-button-presentation:active{
     background-color: var(--special-dark-yellow);
 }
 
@@ -124,19 +124,19 @@ ul{
     color: var(--special-blue);
 }
 .info-text{
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .definition-list-text{
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .definition-list dt{
     font-size: 45px;
     line-height: 64px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .definition-list dd{
     color: var(--special-blue);
@@ -155,7 +155,7 @@ ul{
 
 .contacts-text{
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 }
@@ -196,7 +196,7 @@ ul{
 .footer-promo h2{
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .footer-promo p{
     line-height: 22px;
