@@ -113,6 +113,81 @@ ul{
     background-color: var(--special-dark-yellow);
 }
 
+/* catalog */
+
+.main-title-catalog{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+.hidden{
+    display: none;
+}
+legend{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+fieldset{
+    border: none;
+}
+input{
+    line-height: 20px;
+    color: var(--special-blue);
+}
+.cost-fieldset ul{
+    line-height: 18px;
+    color: var(--special-blue);
+    text-transform: uppercase;
+}
+.show{
+    background-color: var(--basic-light-grey);
+    color: var(--basic-black);
+    padding: 17px 88px 15px 89px;
+    border: none;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.show:hover{
+    background-color: var(--special);
+}
+.show:active{
+    background-color: var(--special-light);
+}
+
+.sorting-list a{
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+.shorting-list a:active{
+    opacity: none;
+}
+.pages-list a{
+    text-transform: uppercase;
+    background-color: var(--basic-light-grey);
+    color: var(--basic-black);
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+.pages-list a:hover{
+    background-color: var(--special-light);
+}
+.pages-list a:active{
+    background-color: var(--special);
+}
+/* .pages-list-count{
+    padding: 17px 20px 15px 20px;
+}
+.pages-list-next{
+    padding: 17px 78px 15px 77px;
+} */
+
 /* footer */
 
 .info-title{
@@ -173,6 +248,15 @@ ul{
     text-transform: uppercase;
     line-height: 18px;
     color: var(--basic-white);
+    padding: 16px 44px;
+    border-radius: 3px;
+}
+.footer-button:hover{
+    background-color: var(--sprecial-red);
+}
+.footer-button:active{
+    background-color: var(--special-dark-red);
+    opacity: 0.3;
 }
 
 .socials-button-list a{
@@ -191,6 +275,9 @@ ul{
 }
 .socials-button-list a:active{
     background-color: var(--special-dark-red);
+}
+.socials-button-list a img:active{
+    opacity: 0.3;
 }
 
 .footer-promo h2{
