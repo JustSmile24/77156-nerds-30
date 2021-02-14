@@ -123,15 +123,21 @@ ul{
 .hidden{
     display: none;
 }
-legend{
+.form-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
 }
-fieldset{
+.cost-fieldset{
     border: none;
 }
-input{
+.grid{
+    border: none;
+}
+.features{
+    border: none;
+}
+.marker{
     line-height: 20px;
     color: var(--special-blue);
 }
