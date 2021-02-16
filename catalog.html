@@ -13,105 +13,113 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-navigation-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нердс">
-        </a>
-          <ul class="site-navigation">
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-          <a class="user-navigation" href="blank.html">Корзина</a>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-navigation-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип компании Нердс">
+          </a>
+            <ul class="site-navigation">
+              <li><a href="blank.html">Студия</a></li>
+              <li><a href="blank.html">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="blank.html">Контакты</a></li>
+            </ul>
+            <a class="user-navigation" href="blank.html">Корзина</a>
         </nav>
-        <h1 class="main-title-catalog">Магазин готовых шаблонов</h1>
+        <div class="main-title-container">
+          <h1 class="main-title-catalog">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
     </header>
     <main class="container">
-      <section class="cost">
-       <h2 class="hidden">Стоимость</h2>
-        <form class="cost-filter" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="cost-fieldset">
-          <legend class="form-title">Стоимость</legend>
-            <ul>
-              <li>От</li>
-              <li>До</li>
-            </ul>
-        </fieldset>
-      </form>
-      </section>
-      <section class="view-filter">
-        <h2 class="hidden">Фильтр вида</h2>
-        <form class="view-filter-form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="grid">
-            <legend class="form-title">Сетка</legend>
-            <ul class="grid-fieldset-list">
-              <li>
-                <input type="radio" name="grid" value="adaptived" id="filter-adaptived" checked>
-                <label class="marker" for="filter-adaptived">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="fixed" id="filter-fixed">
-                <label class="marker" for="filter-fixed">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="rubbered" id="filter-rubbered">
-                <label class="marker" for="filter-rubbered">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="features">
-            <legend class="form-title">Особенности</legend>
-            <ul class="features-checkbox-list">
-              <li>
-                <input type="checkbox" name="slider" id="filter-slider" checked>
-                <label class="marker" for="filter-slider">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" name="block" id="filter-block" > 
-                <label class="marker" for="filter-block">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" name="news" id="filter-news" checked>
-                <label class="marker" for="filter-news">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" name="galary" id="filter-galary">
-                <label class="marker" for="filter-galary">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" name="basket" id="filter-basket">
-                <label class="marker" for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="show" type="submit">Показать</button>
-        </form>
-        <h2 class="sorting">Сортировать:</h2>
-        <ul class="sorting-list">
-          <li><a class="sorting-list-cost" href="#">По цене</a></li>
-          <li><a class="sorting-list-type" href="#">По типу</a></li>
-          <li><a class="sorting-list-title" href="#">По названию</a></li>
-        </ul>
-        <ul class="sorting-triangl-list">
-          <li class="triangl-down"><a href="#"></a></li>
-          <li class="triangl-top"><a href="#"></a></li>
-        </ul>  
-        <ul class="image-sites-list">
-          <li><img src="img/img-sedona.jpg" width="358" height="578" alt="Седона"></li>
-          <li><img src="img/img-pink.jpg" width="358" height="578" alt="Пинк"></li>
-          <li><img src="img/img-barbershop.jpg" width="358" height="578" alt="Барбершоп"></li>
-          <li><img src="img/img-mishka.jpg" width="358" height="578" alt="Мишка"></li>
-          <li><img src="img/img-aplus.jpg" width="358" height="578" alt="АПлюс"></li>
-          <li><img src="img/img-kvast.jpg" width="358" height="578" alt="Крафтовый квас"></li>
-        </ul>
-      </section>
-        <ul class="pages-list">
-          <li><a class="pages-list-count" href="#">1</a></li>
-          <li><a class="pages-list-count" href="#">2</a></li>
-          <li><a class="pages-list-count" href="#">3</a></li>
-          <li><a class="pages-list-next" href="#">Следующая</a></li>
-        </ul>
+      <div class="catalog-page">
+        <div class="user-panel">
+          <section class="cost">
+            <form class="view-filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="cost-fieldset">
+              <legend class="form-title">Стоимость</legend>
+                <ul>
+                  <li>От</li>
+                  <li>До</li>
+                </ul>
+            </fieldset>
+          </section>
+          <section class="view-filter">
+            <fieldset class="grid">
+              <legend class="form-title">Сетка</legend>
+              <ul class="grid-fieldset-list">
+                <li>
+                  <input type="radio" name="grid" value="adaptived" id="filter-adaptived" checked>
+                  <label class="marker" for="filter-adaptived">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label class="marker" for="filter-fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="rubbered" id="filter-rubbered">
+                  <label class="marker" for="filter-rubbered">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+              <fieldset class="features">
+                <legend class="form-title">Особенности</legend>
+                <ul class="features-checkbox-list">
+                  <li>
+                    <input type="checkbox" name="slider" id="filter-slider" checked>
+                    <label class="marker" for="filter-slider">Слайдер</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="block" id="filter-block" > 
+                    <label class="marker" for="filter-block">Блок преимуществ</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="news" id="filter-news" checked>
+                    <label class="marker" for="filter-news">Новости</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="galary" id="filter-galary">
+                    <label class="marker" for="filter-galary">Галерея</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="basket" id="filter-basket">
+                    <label class="marker" for="filter-basket">Корзина</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="show" type="submit">Показать</button>
+            </form>
+          </div>
+          <div class="site-list-block">
+            <div class="sorting-list-block">
+            <h2 class="sorting">Сортировать:</h2>
+              <ul class="sorting-list">
+                <li><a class="sorting-list-cost" href="#">По цене</a></li>
+                <li><a class="sorting-list-type" href="#">По типу</a></li>
+                <li><a class="sorting-list-title" href="#">По названию</a></li>
+              </ul>
+              <ul class="sorting-triangl-list">
+                <li class="triangl-down"><a href="#"></a></li>
+                <li class="triangl-top"><a href="#"></a></li>
+              </ul>
+            </div>
+              <ul class="image-sites-list">
+                <li><img src="img/img-sedona.jpg" width="358" height="578" alt="Седона"></li>
+                <li><img src="img/img-pink.jpg" width="358" height="578" alt="Пинк"></li>
+                <li><img src="img/img-barbershop.jpg" width="358" height="578" alt="Барбершоп"></li>
+                <li><img src="img/img-mishka.jpg" width="358" height="578" alt="Мишка"></li>
+                <li><img src="img/img-aplus.jpg" width="358" height="578" alt="АПлюс"></li>
+                <li><img src="img/img-kvast.jpg" width="358" height="578" alt="Крафтовый квас"></li>
+              </ul> 
+            </section>
+              <ul class="pages-list">
+                <li><a class="pages-list-count" href="#">1</a></li>
+                <li><a class="pages-list-count" href="#">2</a></li>
+                <li><a class="pages-list-count" href="#">3</a></li>
+                <li><a class="pages-list-next" href="#">Следующая</a></li>
+              </ul>
+          </div>
+        </div>
     </main>
     <footer class="main-footer">
       <section class="footer-map">
@@ -125,17 +133,19 @@
           <a class="footer-button" href="#">Напишите нам</a>
         </div>
       </section>
-      <section class="footer-socials">
-        <ul class="socials-button-list">
-           <li><a class="socials-button" href="vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="Иконка вконтакте"></a></li>
-           <li><a class="socials-button" href="facebook.com"><img src="img/fb-icon.svg" width="12" height="12" alt="Иконка фейсбука"></a></li>
-           <li><a class="socials-button" href="https://www.instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="Иконка инстаграмма"></a></li>
-        </ul>
-        <div class="footer-promo">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </section>
+      <div class="container">
+        <section class="footer-socials">
+          <ul class="socials-button-list">
+            <li><a class="socials-button" href="vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="Иконка вконтакте"></a></li>
+            <li><a class="socials-button" href="facebook.com"><img src="img/fb-icon.svg" width="12" height="12" alt="Иконка фейсбука"></a></li>
+            <li><a class="socials-button" href="https://www.instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="Иконка инстаграмма"></a></li>
+          </ul>
+          <div class="footer-promo">
+            <h2>Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </section>
+      </div>
     </footer>
     <!-- <div class="form"> 
           <h2>Напишите нам</h2>
