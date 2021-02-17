@@ -225,20 +225,18 @@ ul{
 
 
 /* catalog */
-.main-title-container{
-    display: grid;
-    justify-self: center;
-    padding-bottom: 80px;
-}
+
 .main-title-catalog{
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
-    justify-self: center;
+    text-align: center;
+    padding-bottom: 100px;
 }
 .catalog-page{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 260px 1fr;
+    column-gap: 140px;
 }
 .form-title{
     font-weight: 700;
@@ -249,9 +247,7 @@ ul{
 .cost-fieldset{
     border: none;
 }
-.cost-fieldset ul{
-    paddi
-}
+
 .grid{
     border: none;
 }
