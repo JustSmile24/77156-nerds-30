@@ -57,7 +57,6 @@ ul{
     background-color: var(--basic-light-grey);
     margin-bottom: 80px;
 }
-
 .main-navigation{
     font-weight: 500;
     line-height: 30px;
@@ -66,12 +65,20 @@ ul{
     grid-template-columns:  160px 1fr 160px;
     column-gap: 30px;
 }
+.main-navigation-logo{
+    padding-top: 49px;
+}
 .site-navigation{
     justify-self: center;
-    width: 437px;
+    min-width: 437px;
+    margin: 0;
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
 }
 .user-navigation{
     justify-self: end;
+    padding-top: 75px;
 }
 
 .main-navigation a{
@@ -93,6 +100,10 @@ ul{
 }
 .order{
     height: 507px;
+}
+.order-logo{
+    width: 300px;
+    height: 146px;
 }
 .order-list{
     margin: 0;
@@ -165,13 +176,23 @@ ul{
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
+    padding-bottom: 32px;
 }
 .info p{
     color: var(--special-blue);
 }
+.info-first-text{
+    color: var(--special-blue);
+    padding-bottom: 40px;
+}
 .info-text{
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom: 23px;
+}
+.second-logo{
+    width: 360px;
+    height: 208px;
 }
 
 .logo-container{
@@ -190,6 +211,7 @@ ul{
 .definition-list-text{
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
 }
 
 
@@ -384,6 +406,7 @@ ul{
     background-color: var(--special-light-grey);
     border-radius: 50%;
     display: flex;
+    justify-content: space-around;
 }
 .footer-socials{
     display: grid;
