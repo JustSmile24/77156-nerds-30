@@ -136,7 +136,6 @@ ul{
     padding: 17px 40px 15px 39px;
     text-transform: uppercase;
 }
-
 .order-button-web{
     background-color: var(--special-light-red);
 }
@@ -171,7 +170,6 @@ ul{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-
 .info-title{
     font-size: 45px;
     line-height: 45px;
@@ -194,27 +192,20 @@ ul{
     width: 360px;
     height: 208px;
 }
-
 .logo-container{
     justify-self: end;
 }
-
-
 .definition-list{
     width: 360px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-
-
 .definition-list-text{
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
 }
-
-
 .definition-list dt{
     font-size: 45px;
     line-height: 64px;
@@ -226,14 +217,12 @@ ul{
     line-height: 18px;
     margin: 0;
 }
-
 .site-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 80px;
     padding-bottom: 75px;
 }
-
 .site-list li{
     opacity: 0.2;
 }
@@ -243,8 +232,6 @@ ul{
 .site-list li:active{
     opacity: 0.1;
 }
-
-
 
 /* catalog */
 
@@ -269,13 +256,12 @@ ul{
 .cost-fieldset{
     border: none;
 }
-
 .grid{
     border: none;
 }
-
 .features{
     border: none;
+    padding-bottom: 20px;
 }
 .marker{
     line-height: 20px;
@@ -304,7 +290,22 @@ ul{
 }
 .sorting-list-block{
     display: grid;
-    grid-template-columns: 2fr 1fr min-content;
+    grid-template-columns: 1fr 1fr 40px;
+}
+.sorting-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    width: 272px;
+    padding-left: 40px;
+}
+.sorting{
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0;
 }
 .image-sites-list{
     display: grid;
@@ -313,7 +314,6 @@ ul{
     justify-self: end;
     row-gap: 30px;
 }
-
 .sorting-list a{
     font-size: 14px;
     line-height: 18px;
@@ -321,9 +321,16 @@ ul{
     color: var(--basic-black);
     opacity: 0.3;
 }
-
 .shorting-list a:active{
     opacity: none;
+}
+.pages-list{
+    margin: 0;
+    padding-top: 55px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 442px;
 }
 .pages-list a{
     text-transform: uppercase;
@@ -339,23 +346,12 @@ ul{
 .pages-list a:active{
     background-color: var(--special);
 }
-.sorting{
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0;
-}
-/* .pages-list-count{
+.pages-list-count{
     padding: 17px 20px 15px 20px;
 }
 .pages-list-next{
     padding: 17px 78px 15px 77px;
-} */
-
-
-
-
+}
 
 /* footer */
 
@@ -367,7 +363,7 @@ ul{
     min-height: 308px;
     width: 1160px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 54px 20px;
 }
 .contacts-text{
     text-transform: uppercase;
