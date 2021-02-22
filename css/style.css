@@ -55,7 +55,6 @@ ul{
 
 .main-header{
     background-color: var(--basic-light-grey);
-    margin-bottom: 80px;
 }
 .main-navigation{
     font-weight: 500;
@@ -76,9 +75,13 @@ ul{
     display: flex;
     justify-content: space-around;
 }
+
 .user-navigation{
     justify-self: end;
     padding-top: 75px;
+}
+.user-navigation svg{
+    margin-right: 20px;
 }
 
 .main-navigation a{
@@ -90,6 +93,78 @@ ul{
 .main-navigation a:active{
     opacity: 0.3;
 }
+.main-navigation a:focus{
+    border-bottom: 2px solid black;
+}
+.slider{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.slide-hidden{
+    display: none;
+}
+.slider-current{
+    display: block;
+}
+.slider-title{
+    font-weight: 500;
+    line-height: 55px;
+    font-size: 55px;
+    width: 538px;
+    margin: 0;
+    padding-top: 78px;
+}
+.slider-text{
+    color: var(--special-blue);
+    width: 400px;
+    margin-top: 38px;
+}
+.slide-button{
+    background-color: var(--special-light-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 17px 54px 15px;
+    border-radius: 3px;
+    margin-top: 38px;
+    margin-bottom: 80px;
+}
+
+.slider-item-first{
+    background-image: url("/img/slide1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.slider-item-second{
+    background-image: url(/img/slide2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.slider-item-third{
+    background-image: url(/img/slide3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.slider-controls{
+    position: absolute;
+    bottom: 96px;
+    left: 536px;
+    display: flex;
+    width: 88px;
+    justify-content: space-between;
+}
+.slider-controls button{
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background-color: var(--basic-white);
+    border-radius: 50%; 
+    border: none;
+}
+
 
 
 /* main */
@@ -100,6 +175,10 @@ ul{
 }
 .order{
     height: 507px;
+    margin-top: 80px;
+    background-image: url(/img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .order-logo{
     width: 300px;
@@ -114,7 +193,8 @@ ul{
 }
 .order p{
     width: 260px;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
+    color: var(--special-blue);
 }
 
 .order h3{
@@ -123,10 +203,9 @@ ul{
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
-.order p{
-    color: var(--special-blue);
-}
+
 .order a{
     color: var(--basic-white);
     font-size: 16px;
@@ -135,6 +214,7 @@ ul{
     border-radius: 3px;
     padding: 17px 40px 15px 39px;
     text-transform: uppercase;
+    margin: 0;
 }
 .order-button-web{
     background-color: var(--special-light-red);
@@ -169,28 +249,45 @@ ul{
 .info{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-image: url(/img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 525px;
 }
 .info-title{
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+    margin: 0;
+    margin-top: 78px;
 }
 .info p{
     color: var(--special-blue);
 }
 .info-first-text{
     color: var(--special-blue);
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .info-text{
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 23px;
+    padding: 0;
+}
+
+.info-list{
+    list-style: url(/img/Rectangle11.svg);
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+}
+.info-list li{
+    margin-top: 17px;
 }
 .second-logo{
     width: 360px;
     height: 208px;
+    margin-top: 39px;
 }
 .logo-container{
     justify-self: end;
@@ -217,14 +314,22 @@ ul{
     line-height: 18px;
     margin: 0;
 }
+.site{
+    background-image: url(/img/Rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
 .site-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 80px;
     padding-bottom: 75px;
+    align-items: center;
 }
+
 .site-list li{
     opacity: 0.2;
+    margin-left: 52px;
 }
 .site-list li:hover{
     opacity: 1;
@@ -232,6 +337,7 @@ ul{
 .site-list li:active{
     opacity: 0.1;
 }
+
 
 /* catalog */
 
