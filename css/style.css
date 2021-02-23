@@ -93,9 +93,8 @@ ul{
 .main-navigation a:active{
     opacity: 0.3;
 }
-.main-navigation a:focus{
-    border-bottom: 2px solid black;
-}
+
+
 .slider{
     margin: 0;
     padding: 0;
@@ -131,20 +130,28 @@ ul{
     margin-top: 38px;
     margin-bottom: 80px;
 }
+.slide-button:hover{
+    background-color: var(--sprecial-red);
+}
+.slide-button:active{
+    background-color: var(--special-dark-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
+}
 
 .slider-item-first{
-    background-image: url("/img/slide1.png");
+    background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
     background-position: right;
 
 }
 .slider-item-second{
-    background-image: url(/img/slide2.png);
+    background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
     background-position: right;
 }
 .slider-item-third{
-    background-image: url(/img/slide3.png);
+    background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -157,12 +164,25 @@ ul{
     justify-content: space-between;
 }
 .slider-controls button{
+    position: relative;
     padding: 0;
     width: 18px;
     height: 18px;
     background-color: var(--basic-white);
     border-radius: 50%; 
     border: none;
+    outline: none;
+}
+.slider-controls button.active::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    bottom: 5px;
+    left: 5px;
+    border: 2px solid #C1C1C1;
+    box-sizing: border-box;
 }
 
 
@@ -176,7 +196,7 @@ ul{
 .order{
     height: 507px;
     margin-top: 80px;
-    background-image: url(/img/Rectangle.svg);
+    background-image: url(/img/horizontal.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -216,6 +236,9 @@ ul{
     text-transform: uppercase;
     margin: 0;
 }
+.order-list button:active{
+    color: rgba(255, 255, 255, 0.3);
+}
 .order-button-web{
     background-color: var(--special-light-red);
 }
@@ -224,6 +247,8 @@ ul{
 }
 .order-button-web:active{
     background-color: var(--special-dark-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 .order-button-apps{
     background-color: var(--special-light-green);
@@ -233,6 +258,8 @@ ul{
 }
 .order-button-apps:active{
     background-color: var(--special-dark-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 .order-button-presentation{
     background-color: var(--special-light-yellow);
@@ -242,6 +269,8 @@ ul{
 }
 .order-button-presentation:active{
     background-color: var(--special-dark-yellow);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 .info-container{
     width: 651px;
@@ -249,7 +278,7 @@ ul{
 .info{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-image: url(/img/Rectangle.svg);
+    background-image: url(/img/horizontal.svg);
     background-repeat: no-repeat;
     background-position: bottom;
     height: 525px;
@@ -276,13 +305,20 @@ ul{
 }
 
 .info-list{
-    list-style: url(/img/Rectangle11.svg);
+    list-style: none;
     margin: 0;
     padding: 0;
     padding-left: 32px;
 }
 .info-list li{
+    position: relative;
     margin-top: 17px;
+}
+.info-list li::before{
+    content: url('../img/list.svg');
+    position: absolute;
+    left: -32px;
+    bottom: 5px;
 }
 .second-logo{
     width: 360px;
@@ -315,26 +351,43 @@ ul{
     margin: 0;
 }
 .site{
-    background-image: url(/img/Rectangle.svg);
+    background-image: url(../img/horizontal.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
 .site-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 80px;
-    padding-bottom: 75px;
     align-items: center;
+    list-style: none;
+    margin-top: 46px;
+    padding-bottom: 46px;
+}
+.bg-vertical{
+    position: relative;
+}
+.bg-vertical::before{
+    content: url('../img/vertical.svg');
+    position: absolute;
+    bottom: 20px;
+}
+.bg-vertical-pink{
+    position: relative;
+}
+.bg-vertical-pink::before{
+    content: url('../img/vertical.svg');
+    position: absolute;
+    bottom: 0;
 }
 
-.site-list li{
+.site-list a{
     opacity: 0.2;
     margin-left: 52px;
 }
-.site-list li:hover{
+.site-list a:hover{
     opacity: 1;
 }
-.site-list li:active{
+.site-list a:active{
     opacity: 0.1;
 }
 
@@ -499,13 +552,14 @@ ul{
 }
 .footer-button:active{
     background-color: var(--special-dark-red);
-    opacity: 0.3;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .socials-button-list a{
     width: 81px;
     height: 81px;
-    background-color: var(--special-light-grey);
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
     border-radius: 50%;
     display: flex;
     justify-content: space-around;
@@ -525,14 +579,16 @@ ul{
     margin: auto;
 }
 .socials-button-list a:hover{
-    background-color: var(--sprecial-red);
+    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 }
-.socials-button-list a:active{
-    background-color: var(--special-dark-red);
+.socials-button-list a:active {
+    background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-.socials-button-list a img:active{
+.socials-button-list img:active{
     opacity: 0.3;
 }
+
 
 .footer-promo h2{
     font-size: 36px;
