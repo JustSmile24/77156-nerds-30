@@ -67,6 +67,12 @@ ul{
 .main-navigation-logo{
     padding-top: 49px;
 }
+.main-navigation-logo:hover{
+    opacity: 0.7;
+}
+.main-navigation-logo:active{
+    opacity: 0.3;
+}
 .site-navigation{
     justify-self: center;
     min-width: 437px;
@@ -75,15 +81,19 @@ ul{
     display: flex;
     justify-content: space-around;
 }
-
+.site-navigation li.now{
+   border-bottom: 2px solid var(--special-light-red);
+}
 .user-navigation{
     justify-self: end;
     padding-top: 75px;
+    position: relative;
 }
 .user-navigation svg{
-    margin-right: 20px;
+    position: absolute;
+    bottom: 27px;
+    left: -40px;
 }
-
 .main-navigation a{
     color: var(--basic-black);
 }
@@ -93,7 +103,18 @@ ul{
 .main-navigation a:active{
     opacity: 0.3;
 }
-
+.active-basket{
+    position: relative;
+}
+.active-basket::before{
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 2px;
+    background-color: var(--special-light-red);
+    left: -37px;
+    top: 40px;
+}
 
 .slider{
     margin: 0;
@@ -362,7 +383,12 @@ ul{
     list-style: none;
     margin-top: 46px;
     padding-bottom: 46px;
+    list-style: none;
 }
+.site-list li{
+    position: relative;
+}
+
 .bg-vertical{
     position: relative;
 }
@@ -378,7 +404,7 @@ ul{
     content: url('../img/vertical.svg');
     position: absolute;
     bottom: 0;
-}
+} 
 
 .site-list a{
     opacity: 0.2;
@@ -585,7 +611,7 @@ ul{
     background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-.socials-button-list img:active{
+.socials-button-list a:active img{
     opacity: 0.3;
 }
 
