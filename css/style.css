@@ -5,6 +5,12 @@
     --basic-black: #000000;
     --basic-light-grey: #EEEEEE;
     --basic-dark-grey: #666666;
+    --special-light-red-gradient: linear-gradient(0deg, #D7373B, #D7373B);
+    --special-grey-gradient: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+    --special-red-gradient: linear-gradient(0deg, #E74246, #E74246);
+    --special-grey-border: #C1C1C1;
+    --special-white: rgba(255, 255, 255, 0.3);
+    --special-black: rgba(0, 1, 1, 0.1);
     --special-light-red: #FB565A; 
     --special-light-green: #00CA74;
     --special-green: #00BC6C;
@@ -115,7 +121,6 @@ ul{
     left: -37px;
     top: 40px;
 }
-
 .slider{
     margin: 0;
     padding: 0;
@@ -149,29 +154,30 @@ ul{
     padding: 17px 54px 15px;
     border-radius: 3px;
     margin-top: 38px;
-    margin-bottom: 80px;
 }
 .slide-button:hover{
     background-color: var(--sprecial-red);
 }
 .slide-button:active{
     background-color: var(--special-dark-red);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0px var(--special-black);
+    color: var(--special-white);
 }
-
-.slider-item-first{
+.slider-list li{
+    padding-bottom: 80px;
+}
+.slider-item:nth-child(1){
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
     background-position: right;
 
 }
-.slider-item-second{
+.slider-item:nth-child(2){
     background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
     background-position: right;
 }
-.slider-item-third{
+.slider-item:nth-child(3){
     background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -202,7 +208,7 @@ ul{
     border-radius: 50%;
     bottom: 5px;
     left: 5px;
-    border: 2px solid #C1C1C1;
+    border: 2px solid var(--special-grey-border);
     box-sizing: border-box;
 }
 
@@ -217,7 +223,7 @@ ul{
 .order{
     height: 507px;
     margin-top: 80px;
-    background-image: url(/img/horizontal.svg);
+    background-image: url(../img/horizontal.svg);
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -248,6 +254,7 @@ ul{
 }
 
 .order a{
+    display: inline-block;
     color: var(--basic-white);
     font-size: 16px;
     line-height: 18px;
@@ -258,7 +265,7 @@ ul{
     margin: 0;
 }
 .order-list button:active{
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--special-white);
 }
 .order-button-web{
     background-color: var(--special-light-red);
@@ -268,8 +275,8 @@ ul{
 }
 .order-button-web:active{
     background-color: var(--special-dark-red);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0px var(--special-black);
+    color: var(--special-white);
 }
 .order-button-apps{
     background-color: var(--special-light-green);
@@ -279,8 +286,8 @@ ul{
 }
 .order-button-apps:active{
     background-color: var(--special-dark-green);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0px var(--special-black);
+    color: var(--special-white);
 }
 .order-button-presentation{
     background-color: var(--special-light-yellow);
@@ -290,8 +297,8 @@ ul{
 }
 .order-button-presentation:active{
     background-color: var(--special-dark-yellow);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0px var(--special-black);
+    color: var(--special-white);
 }
 .info-container{
     width: 651px;
@@ -299,9 +306,6 @@ ul{
 .info{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-image: url(/img/horizontal.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
     height: 525px;
 }
 .info-title{
@@ -324,7 +328,6 @@ ul{
     text-transform: uppercase;
     padding: 0;
 }
-
 .info-list{
     list-style: none;
     margin: 0;
@@ -335,12 +338,15 @@ ul{
     position: relative;
     margin-top: 17px;
 }
-.info-list li::before{
-    content: url('../img/list.svg');
+.info-list li::before {
+    content: "";
     position: absolute;
     left: -32px;
-    bottom: 5px;
-}
+    bottom: 11px;
+    width: 25px;
+    height: 2px;
+    background-color: var(--special-light-red);
+  }
 .second-logo{
     width: 360px;
     height: 208px;
@@ -372,38 +378,40 @@ ul{
     margin: 0;
 }
 .site{
-    background-image: url(../img/horizontal.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+    border-bottom: 2px solid var(--special-light-grey);
+    border-top: 2px solid var(--special-light-grey);
 }
 .site-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     list-style: none;
-    margin-top: 46px;
-    padding-bottom: 46px;
-    list-style: none;
+    padding-top: 46px;
+    padding-bottom: 44px;
 }
-.site-list li{
-    position: relative;
-}
+
 
 .bg-vertical{
     position: relative;
 }
 .bg-vertical::before{
-    content: url('../img/vertical.svg');
+    content: "";
     position: absolute;
+    width: 2px;
+    height: 52px;
+    background-color: var(--basic-light-grey);
     bottom: 20px;
 }
 .bg-vertical-pink{
     position: relative;
 }
 .bg-vertical-pink::before{
-    content: url('../img/vertical.svg');
+    content: "";
     position: absolute;
-    bottom: 0;
+    width: 2px;
+    height: 52px;
+    background-color: var(--basic-light-grey);
+    bottom: 3px;
 } 
 
 .site-list a{
@@ -578,14 +586,14 @@ ul{
 }
 .footer-button:active{
     background-color: var(--special-dark-red);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0px var(--special-black);
+    color: var(--special-white);
 }
 
 .socials-button-list a{
     width: 81px;
     height: 81px;
-    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+    background: var(--special-grey-gradient);
     border-radius: 50%;
     display: flex;
     justify-content: space-around;
@@ -605,11 +613,11 @@ ul{
     margin: auto;
 }
 .socials-button-list a:hover{
-    background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+    background: var(--special-red-gradient);
 }
 .socials-button-list a:active {
-    background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    background: var(--special-light-red-gradient);
+    box-shadow: inset 0px 3px 0px var(--special-black);
 }
 .socials-button-list a:active img{
     opacity: 0.3;
