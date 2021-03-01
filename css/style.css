@@ -746,14 +746,27 @@ ul{
  .footer-map{
     position: relative;
     height: 419px;
+    background-image: url(../img/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
 } 
-.footer-map iframe{
+.footer-map::before{
+    content: "";
+    background-image: url(../img/map-marker.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 86px;
+    left: 1035px;
+    width: 231px;
+    height: 190px;
+}
+/* .footer-map iframe{
     height: 416px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 .footer-text{
     margin-left: 50px;
 }
