@@ -30,7 +30,6 @@
     --special-scale-grey: #D7DCDF;
     --special-middle-grey: #ABABAB;
     --special-shadow: rgba(0, 0, 0, 0.15);
-    --special-radio-shadow: rgba(0, 0, 0, 0.25);
 }
 
 /* Basic */
@@ -79,6 +78,10 @@ ul{
 
 .main-header{
     background-color: var(--basic-light-grey);
+    padding-top: 50px;
+}
+.catalog{
+    padding-bottom: 100px;
 }
 .main-navigation{
     font-weight: 500;
@@ -87,9 +90,10 @@ ul{
     display: grid;
     grid-template-columns:  160px 1fr 160px;
     column-gap: 30px;
+    margin-top: 25px;
 }
-.main-navigation-logo{
-    padding-top: 49px;
+.main-navigation-logo a{
+    display: block;
 }
 .main-navigation-logo:hover{
     opacity: 0.7;
@@ -101,21 +105,30 @@ ul{
     justify-self: center;
     min-width: 437px;
     margin: 0;
-    padding-top: 75px;
     display: flex;
     justify-content: space-around;
+    margin-top: 25px;
 }
 .site-navigation li.now{
-   border-bottom: 2px solid var(--special-light-red);
+   position: relative;
+}
+.site-navigation li.now::before{
+    content: "";
+    position: absolute;
+    width: 73px;
+    height: 2px;
+    bottom: 0;
+    left: 1px;
+    background-color: var(--special-dark-red);
 }
 .user-navigation{
     justify-self: end;
-    padding-top: 75px;
+    margin-top: 25px;
     position: relative;
 }
 .user-navigation svg{
     position: absolute;
-    bottom: 27px;
+    bottom: 29px;
     left: -40px;
 }
 .main-navigation a{
@@ -138,6 +151,9 @@ ul{
     background-color: var(--special-light-red);
     left: -37px;
     top: 40px;
+}
+.slider ul{
+    margin: 0;
 }
 .slider{
     margin: 0;
@@ -182,7 +198,7 @@ ul{
     color: var(--special-white);
 }
 .slider-list li{
-    padding-bottom: 80px;
+    padding-bottom: 78px;
 }
 .slider-item:nth-child(1){
     background-image: url("../img/slide1.png");
@@ -458,7 +474,6 @@ ul{
     font-size: 55px;
     line-height: 55px;
     text-align: center;
-    padding-bottom: 100px;
 }
 .catalog-page{
     display: grid;
@@ -597,7 +612,6 @@ ul{
     height: 21px;
     border: 4px solid var(--special-dark-grey);
     border-radius: 50%;
-    box-shadow: 0px 4px 4px var(--special-radio-shadow);
     opacity: 0.4;
 }
 .filter-input-radio:checked + label::after {
@@ -609,7 +623,6 @@ ul{
     height: 11px;
     background-color: var(--special-dark-grey);
     border-radius: 50%;
-    box-shadow: 0px 4px 4px var(--special-radio-shadow);
     opacity: 0.4;
 }
 
@@ -672,25 +685,13 @@ ul{
     position: absolute;
     width: 360px;
     height: 40px;
-    background-color: var(--special-dark-grey);
-    border-radius: 3px 3px 0 0;
+    background-image: url(../img/card.svg);
     top: -40px;
     left: -1px;
-    opacity: 0.12;
 }
-
-.site-list-item::after{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: var(--basic-white);
-    top: -28px;
-    left: 15px;
+.site-list-item:hover::before{
+    background-image: url(../img/card-hover.svg);
 }
-
-
 .sorting-list a{
     font-size: 14px;
     line-height: 18px;
@@ -742,25 +743,41 @@ ul{
 
 /* footer */
 
-.footer-map{
+ .footer-map{
+    position: relative;
+    height: 419px;
+} 
+.footer-map iframe{
     height: 416px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-text{
+    margin-left: 50px;
 }
 .footer-contacts{
+    position: relative;
     width: 319px;
-    min-height: 308px;
-    width: 1160px;
-    margin: 0 auto;
-    padding: 54px 20px;
+    height: 308px;
+    background-color: var(--basic-white);
+    left: 350px;
+    top: 49px;
+    margin: 0;
+    padding: 0;
 }
 .contacts-text{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    padding-top: 49px;
 }
 .contacts-adress{
     color: var(--basic-dark-grey);
     line-height: 18px;
+    margin-bottom: 0;
 }
 .footer-phone{
     text-decoration: none;
@@ -772,8 +789,13 @@ ul{
     text-transform: uppercase;
     line-height: 18px;
     color: var(--basic-white);
-    padding: 16px 44px;
     border-radius: 3px;
+    display:block;
+    text-align: center;
+    padding: 16px 22px;
+    width: 175px;
+    margin-top: 38px;
+
 }
 .footer-button:hover{
     background-color: var(--sprecial-red);
@@ -827,8 +849,7 @@ ul{
     line-height: 22px;
     color: var(--special-grey);
 }
-
-   
+ 
 .sorting-triangl-list{
     padding: 0;
     margin: 0;
@@ -837,9 +858,6 @@ ul{
     position: relative;
 }
 
-/* .triangl-top{
-    position: relative;
-}  */
 .triangl-top::after{
     content: ''; 
     position: absolute;
