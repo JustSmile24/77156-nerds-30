@@ -91,6 +91,7 @@ ul{
 .main-navigation{
     font-weight: 500;
     line-height: 30px;
+    font-size: 16px;
     text-transform: uppercase;
     display: grid;
     grid-template-columns:  160px 1fr 160px;
@@ -177,22 +178,23 @@ ul{
     font-size: 55px;
     width: 538px;
     margin: 0;
-    padding-top: 78px;
+    padding-top: 66px;
 }
 .slider-text{
     color: var(--special-blue);
     width: 400px;
-    margin-top: 38px;
+    margin-top: 27px;
 }
 .slide-button{
     background-color: var(--special-light-red);
     color: var(--basic-white);
     text-transform: uppercase;
+    font-weight: 500;
     display: inline-block;
     text-align: center;
-    padding: 17px 54px 15px;
+    padding: 13px 55px;
     border-radius: 3px;
-    margin-top: 38px;
+    margin-top: 23px;
 }
 .slide-button:hover{
     background-color: var(--sprecial-red);
@@ -208,18 +210,18 @@ ul{
 .slider-item:nth-child(1){
     background-image: url("../img/slide1.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 100%;
 
 }
 .slider-item:nth-child(2){
     background-image: url("../img/slide2.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 100%;
 }
 .slider-item:nth-child(3){
     background-image: url("../img/slide3.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 100%;
 }
 .slider-controls{
     position: absolute;
@@ -260,7 +262,7 @@ ul{
     padding: 0 20px;
 }
 .order{
-    height: 507px;
+    height: 430px;
     margin-top: 80px;
     background-image: url(../img/horizontal.svg);
     background-repeat: no-repeat;
@@ -279,7 +281,7 @@ ul{
 }
 .order p{
     width: 260px;
-    margin-bottom: 49px;
+    margin-bottom: 32px;
     color: var(--special-blue);
 }
 
@@ -289,7 +291,8 @@ ul{
     line-height: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin: 0;
+    margin-top: 19px;
 }
 
 .order a{
@@ -351,36 +354,36 @@ ul{
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    margin-bottom: 32px;
     margin: 0;
-    margin-top: 78px;
+    margin-top: 73px;
 }
 .info p{
     color: var(--special-blue);
 }
 .info-first-text{
     color: var(--special-blue);
-    padding-bottom: 20px;
+    margin-top: 33px;
 }
 .info-text{
     font-weight: 700;
     text-transform: uppercase;
     padding: 0;
+    margin-top: 42px;
 }
 .info-list{
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-left: 32px;
+    padding-left: 37px;
 }
 .info-list li{
     position: relative;
-    margin-top: 17px;
+    margin-top: 23px;
 }
 .info-list li::before {
     content: "";
     position: absolute;
-    left: -32px;
+    left: -36px;
     bottom: 11px;
     width: 25px;
     height: 2px;
@@ -404,6 +407,12 @@ ul{
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
+    margin: 0;
+    margin-top: 30px;
+}
+.definition-list{
+    margin: 0;
+    margin-top: 30px;
 }
 .definition-list dt{
     font-size: 45px;
@@ -415,42 +424,67 @@ ul{
     color: var(--special-blue);
     line-height: 18px;
     margin: 0;
+    margin-top: 12px;
 }
+
 .site{
     border-bottom: 2px solid var(--special-light-grey);
     border-top: 2px solid var(--special-light-grey);
+    margin-bottom: 58px;
 }
 .site-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     list-style: none;
-    padding-top: 46px;
-    padding-bottom: 44px;
+    padding-top: 36px;
+    padding-bottom: 16px; 
 }
-
-
-.bg-vertical{
+.academy{
     position: relative;
+    left: -20px;
 }
-.bg-vertical::before{
+.borodinski{
+    position: relative;
+    top: -6px;
+    left: -15px;
+}
+.pink{
+    position: relative;
+    top: -7px;
+    right: -7px;
+}
+.mishka{
+    position: relative;
+    right: -22px;
+    top: -3px;
+}
+.borodinski::before{
     content: "";
     position: absolute;
     width: 2px;
     height: 52px;
     background-color: var(--basic-light-grey);
-    bottom: 20px;
+    bottom: 25px;
+    left: 4px;
 }
-.bg-vertical-pink{
-    position: relative;
-}
-.bg-vertical-pink::before{
+.mishka::before{
     content: "";
     position: absolute;
     width: 2px;
     height: 52px;
     background-color: var(--basic-light-grey);
-    bottom: 3px;
+    bottom: 25px;
+    left: -14px;
+}
+.pink::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    background-color: var(--basic-light-grey);
+    bottom: 8px;
+    left: -8px;
 } 
 
 .site-list a{
@@ -563,7 +597,9 @@ ul{
     border: none;
     border-radius: 5px;
     background: var(--basic-light-grey);
-
+}
+.price-controls input::-webkit-inner-spin-button {
+    appearance: none;
 }
 /* Сетки */
 .grid{
@@ -915,7 +951,9 @@ ul{
     opacity: 0.3;
 }
 
-
+.footer-promo{
+    margin-top: 5px;
+}
 .footer-promo h2{
     font-size: 36px;
     line-height: 36px;
@@ -972,11 +1010,11 @@ ul{
 
 .modal-form h2{
     line-height: 53px;
-    font-size: 43px;
+    font-size: 45px;
     font-weight: 700;
     margin: 0;
-    margin-top: 60px;
-    margin-bottom: 37px;
+    margin-top: 63px;
+    margin-bottom: 19px;
     margin-left: 100px;
 }
 .user-form{
@@ -993,10 +1031,11 @@ ul{
 .user-form input[type="email"] {
     box-sizing: border-box;
     width: 360px;
+    margin-top: 5px;
     padding-top: 14px;
-    padding-right: 40px;
+    padding-right: 30px;
     padding-bottom: 14px;
-    padding-left: 16px;
+    padding-left: 14px;
     color: var(--basic-grey);
     line-height: 18px;
     opacity: 0.5;
@@ -1006,10 +1045,11 @@ ul{
 .user-form input[id="appointment-text"]{
     box-sizing: border-box;
     width: 760px;
+    margin-top: 5px;
     padding-top: 14px;
     padding-right: 40px;
     padding-bottom: 84px;
-    padding-left: 16px;
+    padding-left: 15px;
     color: var(--basic-grey);
     line-height: 18px;
     opacity: 0.5;
@@ -1028,7 +1068,7 @@ ul{
     border: none;
     outline: none;
     margin-left: 100px;
-    margin-top: 37px;
+    margin-top: 30px;
     cursor: pointer;
 }
 .button-send:hover{
@@ -1054,9 +1094,9 @@ ul{
 .modal-close::after{
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
+  top: 9px;
+  left: -3px;
+  width: 25px;
   height: 3px;
   background-color: var(--special-modal-close);
 }
