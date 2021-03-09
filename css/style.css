@@ -426,6 +426,12 @@ ul{
     margin: 0;
     margin-top: 12px;
 }
+.definition-list sup {
+    font-size: 25px;
+    position: relative;
+    top: -15px;
+    left: 1px;
+}
 
 .site{
     border-bottom: 2px solid var(--special-light-grey);
@@ -743,7 +749,7 @@ ul{
     background-image: url(../img/card-hover.svg);
     display: block;
 }
-.sedona{
+.info-sites-list{
     position: absolute;
     background-color: var(--basic-light-grey);
     box-shadow: 0px 4px 4px var(--special-site-shadow);
@@ -754,7 +760,7 @@ ul{
     text-align: center;
     display: none;
 }
-.site-sedona:hover .sedona{
+.site-hover:hover .info-sites-list{
     display: block;
 }
 .site-name{
@@ -768,10 +774,11 @@ ul{
 .site-info{
     color: var(--basic-dark-grey);
     margin: 0;
-    margin-left: 79px;
+    margin-left: 60px;
     margin-top: 10px;
-    width: 200px;
+    width: 237px;
     line-height: 18px;
+    text-align: center;
 }
 .price-button{
     background-color: var(--special-light-red);
