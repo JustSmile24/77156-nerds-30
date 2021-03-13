@@ -1095,10 +1095,16 @@ img{
 }
 .user-form input:focus{
     border: 2px solid var(--basic-black);
+    outline: none;
 }
-.user-form input:invalid{
+.user-form input:invalid,
+.user-form input:not(:placeholder-shown):not(:focus):invalid{
+    color: var(--special-red);
+    border-color: var(--special-red);
+}
     color: var(--sprecial-red);
     border: 2px solid var(--sprecial-red);
+    outline: none;
 }
 .button-send{
     background-color: var(--special-light-red);
