@@ -191,9 +191,10 @@ img{
     color: var(--basic-white);
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 18px;
     display: inline-block;
     text-align: center;
-    padding: 13px 55px;
+    padding: 17px 54px 15px 54px;
     border-radius: 3px;
     margin-top: 23px;
 }
@@ -262,9 +263,10 @@ img{
     padding: 0 20px;
 }
 .order{
-    height: 430px;
+    height: 428px;
     margin-top: 80px;
-    background-image: url(../img/horizontal.svg);
+    border-bottom: 2px solid var(--special-light-grey);
+    background-image: url("../img/horizontal.svg");
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -373,7 +375,7 @@ img{
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-left: 37px;
+    padding-left: 35px;
 }
 .info-list li{
     position: relative;
@@ -530,6 +532,8 @@ img{
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
 /* Фильтр стоимости */
@@ -538,12 +542,12 @@ img{
     margin: 0;
     padding: 0;
     border: none;
-    padding-bottom: 48px;
+    padding-bottom: 52px;
 }
 .range-filter{
     width: 260px;
-    margin-top: 49px;
-  }
+    margin-top: 48px;
+}
 .range-controls{
     position: relative;
     height: 41px;
@@ -555,8 +559,8 @@ img{
     padding-left: 20px;
 }
 .range-controls .bar{
-    width: 60%;
-    margin-left: 20px;
+    width: 62%;
+    margin-left: 18px;
     height: 2px;
     background: var(--special-light-green);
   }
@@ -566,7 +570,7 @@ img{
 }
 .range-controls .toggle{
     position: absolute;
-    top: 31px;
+    top: 30px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -578,7 +582,7 @@ img{
     cursor: pointer;
 }
 .range-controls .toggle-min{
-    left: 19px;
+    left: 18px;
 }
 .range-controls .toggle-max{
     left: 62%;
@@ -589,11 +593,13 @@ img{
 }  
 .price-controls label{
     text-transform: uppercase;
+    line-height: 22px;
+    color: var(--special-blue);
 }
 .price-controls input{
     width: 60px;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 8px;
     text-align: center;
     color: var(--special-blue);
     border: none;
@@ -610,20 +616,32 @@ img{
     border: none;
     padding: 0;
     margin: 0;
-    margin-top: 5px;
-    margin-bottom: 27px;
+    margin-top: 2px;
+    margin-bottom: 25px;
 }
-.grid-fieldset-list,
+
+.grid-fieldset-list{
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+.features{
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+}
 .features-checkbox-list{
     list-style: none;
     padding: 0;
+    margin: 0;
+    margin-top: 16px;
 }
 .marker{
     line-height: 20px;
     color: var(--special-blue);
 }
 .filter-option {
-    padding-left: 35px;
+    padding-left: 36px;
     margin-bottom: 19px;
   }
 .filter-option label{
@@ -636,7 +654,7 @@ img{
     content: "";
     position: absolute;
     left: -36px;
-    top: -2px;
+    top: -1px;
     width: 19px;
     height: 19px;
     border: 2px solid var(--special-dark-grey);
@@ -653,7 +671,7 @@ img{
     top: -2px;
     width: 25px;
     height: 23px;
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -670,7 +688,7 @@ img{
     content: "";
     position: absolute;
     left: -36px;
-    top: -4px;
+    top: -3px;
     width: 17px;
     height: 17px;
     border: 4px solid var(--special-dark-grey);
@@ -680,7 +698,7 @@ img{
 .filter-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: -28px;
     width: 9px;
     height: 9px;
@@ -712,7 +730,7 @@ img{
     line-height: 18px;
     text-transform: uppercase;
     border-radius: 3px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 .show:hover{
     background-color: var(--special);
@@ -759,7 +777,7 @@ img{
     position: absolute;
     width: 360px;
     height: 40px;
-    background-image: url(../img/card.svg);
+    background-image: url("../img/card.svg");
     top: -40px;
     left: -1px;
 }
@@ -767,14 +785,16 @@ img{
     filter: drop-shadow(0px 6px 15px var(--special-site-shadow));
 }
 .site-list-item:hover::before{
-    background-image: url(../img/card-hover.svg);
+    background-image: url("../img/card-hover.svg");
     display: block;
 }
 .info-sites-list{
     position: absolute;
     background-color: var(--basic-light-grey);
     box-shadow: 0px 4px 4px var(--special-site-shadow);
-    width: 360px;
+    box-sizing: border-box;
+    width: 358px;
+    height: 231px;
     bottom: 5px;
     left: 0;
     text-align: center;
@@ -785,13 +805,16 @@ img{
     display: block;
 }
 .site-name{
+    display: block;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    margin: 0;
-    margin-top: 26px;
+    color: var(--basic-black);
+    padding-top: 26px;
 }
+
 .site-name:hover{
     color: var(--sprecial-red);
 }
@@ -913,17 +936,18 @@ img{
 .footer-map{
     position: relative;
     height: 419px;
-    background-image: url(../img/map.png);
+    background-image: url("../img/map.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 } 
 .footer-map::before{
     content: "";
-    background-image: url(../img/map-marker.png);
+    background-image: url("../img/map-marker.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 88px;
-    left: 1054px;
+    left: calc(100% - 1590px / 2);
     width: 231px;
     height: 190px;
 }
@@ -931,11 +955,13 @@ img{
     margin-left: 50px;
 }
 .footer-contacts{
+    display: block;
     position: relative;
+    box-sizing: border-box;
     width: 319px;
     height: 308px;
     background-color: var(--basic-white);
-    left: 372px;
+    left: calc(50% - 1160px / 2);
     top: 55px;
     margin: 0;
     padding: 0;
@@ -945,7 +971,7 @@ img{
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    padding-top: 49px;
+    padding-top: 51px;
     padding-bottom: 5px;
 }
 .contacts-adress{
@@ -992,7 +1018,7 @@ img{
 .footer-socials{
     display: grid;
     grid-template-columns: 400px 2fr;
-    margin-top: 50px;
+    margin-top: 53px;
 }
 .socials-button-list{
     width: 270px;
@@ -1000,6 +1026,7 @@ img{
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
     padding-right: 140px;
+    padding-left: 1px;
 }
 .socials-button img{
     margin: auto;
@@ -1022,7 +1049,7 @@ img{
     line-height: 36px;
     font-weight: 700;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 17px;
     padding: 0;
 }
 .footer-promo p{
@@ -1038,7 +1065,6 @@ img{
     position: fixed;
     bottom: 140px;
     left: 25%;
-    margin: 0 auto;
     filter: drop-shadow(0px 4px 4px var(--special-site-shadow));
     display: none;
 }
@@ -1060,6 +1086,8 @@ img{
 }
 .user-form label{
     font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
 }
 .user-form input[type="text"],
 .user-form input[type="email"] {
@@ -1097,29 +1125,26 @@ img{
     border: 2px solid var(--basic-black);
     outline: none;
 }
-.user-form input:invalid,
 .user-form input:not(:placeholder-shown):not(:focus):invalid{
     color: var(--special-red);
     border-color: var(--special-red);
 }
-    color: var(--sprecial-red);
-    border: 2px solid var(--sprecial-red);
-    outline: none;
-}
 .button-send{
     background-color: var(--special-light-red);
     text-transform: uppercase;
-    line-height: 18px;
-    color: var(--basic-white);
-    border-radius: 3px;
-    text-align: center;
-    padding: 16px;
+    box-sizing: border-box;
     width: 259px;
+    height: 50px;
+    border-radius: 3px;
     border: none;
     outline: none;
-    margin-left: 100px;
-    margin-top: 30px;
     cursor: pointer;
+    position: relative;
+    bottom: -211px;
+    left: -400px;
+    color: var(--basic-white);
+    line-height: 18px;
+    font-size: 16px;
 }
 .button-send:hover{
     background-color: var(--sprecial-red);
