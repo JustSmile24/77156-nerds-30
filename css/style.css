@@ -941,16 +941,6 @@ img{
     background-position: center;
     background-size: cover;
 } 
-.footer-map::before{
-    content: "";
-    background-image: url("../img/map-marker.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 88px;
-    left: calc(100% - 1590px / 2);
-    width: 231px;
-    height: 190px;
-}
 .footer-text{
     margin-left: 50px;
 }
