@@ -1009,6 +1009,7 @@ img{
     display: grid;
     grid-template-columns: 400px 2fr;
     margin-top: 53px;
+    padding-bottom: 66px;
 }
 .socials-button-list{
     width: 270px;
